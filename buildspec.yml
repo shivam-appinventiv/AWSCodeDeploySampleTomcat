@@ -11,7 +11,7 @@ phases:
   post_build:
   commands:
     - echo Build completed on `date`
-    aws deploy push \
+    - aws deploy push \
     --application-name java-project-codedeploy \
     --s3-location s3://java-artifacts/java-project-build/LoginWebApp-1.war \
     --ignore-hidden-files
