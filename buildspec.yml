@@ -14,7 +14,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - aws s3 rm s3://java-artifacts/java-project-build/LoginWebApp-1.war
-      
+      - aws s3 cp '/target/LoginWebApp-1.war' s3://java-artifacts/java-project-build
 
 artifacts:
   files:
